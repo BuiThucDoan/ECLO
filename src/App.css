@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap');
+
+.custom-gradient-button {
+  background: linear-gradient(90deg, #6a41fb, #f49959, #6a41fb);
+  background-size: 200%;
+  transition: all .4s ease-in-out;
+  background-position: left;
+  border-color: transparent;
+  color: white;
+  border-radius: 1.5rem; /* equivalent to rounded-3xl in Tailwind CSS */
+}
+
+.custom-gradient-button:hover {
+  background-position: right;
+}
+
+.custom-gradient-bg {
+  background: linear-gradient(90deg, #6a41fb, #f49959, #6a41fb);
+}
+
+.navbar-noilen {
+  position: sticky;
+  top: 0;
+  z-index: 998; /* Đảm bảo nổi lên trên các phần tử khác */
+}
+
+.dieuhuong-noilen {
+  position: sticky;
+  top: 0;
+  z-index: 999; /* Đảm bảo nổi lên trên các phần tử khác */
+}
+
+.menu-container {
+  width: 100%;
+}
+
+.breadcrumb-container {
+  width: 100%;
+  padding: 10px;
+}
+
+.detail-container {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .w-full.sm\:w-4\/5 {
+    display: flex;
+    justify-content: center;
+  }
+  .tablet-mobile-mr {
+    margin-right: 4px;
+  }
+  .related-articles {
+    display: none;
+  }
+}
+
+.custom-button {
+  background-color: #4AC4F3; /* Đặt màu nền là màu đen */
+  color: white; /* Đặt màu chữ là màu trắng */
+  font-size: 1rem;
+}
+.navbar {
+  border-width: 1px;
+}
+
+.navbar img {
+  width: 50px; /* Adjust the width to fit better on smaller screens */
+  height: 20px;
+  padding: 2px;
+}
+
+@media (max-width: 768px) {
+  .navbar img {
+    width: 40px; /* Adjust the width for smaller screens */
+    height: 16px;
+  }
+
+  .navbar .flex {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start;
+  }
+
+  .navbar .space-x-4 > *:not(:last-child) {
+    margin-right: 16px; /* Adjust the margin for better spacing */
+  }
+
+  .navbar .space-x-4 {
+    overflow-x: auto; /* Allow horizontal scrolling if items overflow */
+  }
+
+  .navbar .ml-24 {
+    margin-left: 8px; /* Reduce the left margin on smaller screens */
+  }
+}
